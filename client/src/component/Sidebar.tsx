@@ -98,13 +98,13 @@ import { useState } from "react";
         {isModal && (
         <div className="fixed inset-0 flex items-center justify-center bg-gray-900 ">
           <div className="bg-yellow-300 p-6 rounded-lg shadow-lg w-96">
-            <h2 className="text-xl font-bold mb-4 text-black">Create Folder</h2>
+            <h2 className="text-xl font-bold mb-4 text-gray-900">Create Folder</h2>
             <input
               type="text"
               value={folderName}
               onChange={(e) => setFolderName(e.target.value)}
               placeholder="Enter folder name..."
-              className="w-full text-black border-2 p-2 rounded mb-4"
+              className="w-full text-gray-900 border-2 p-2 rounded mb-4"
             />
             <div className="flex justify-end space-x-2">
               <button onClick={closeModal} className="px-4 py-2 bg-gray-900 cursor-pointer text-white rounded ">
@@ -120,12 +120,12 @@ import { useState } from "react";
 
       {isFileModal && (
         <div className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg w-96">
+          <div className="bg-yellow-300 p-6 rounded-lg shadow-lg w-96">
             <h2 className="text-xl font-bold mb-4 text-black">Create File</h2>
             <select
               value={selectedFolder}
               onChange={(e) => setSelectedFolder(e.target.value)}
-              className="w-full text-black border-2 p-2 rounded mb-4"
+              className="w-full text-gray-900 border-2 p-2 rounded mb-4"
             >
               <option value="">Select Folder</option>
               {folders.map((folder) => (
@@ -141,14 +141,14 @@ import { useState } from "react";
               value={fileName}
               onChange={(e) => setFileName(e.target.value)}
               placeholder="Enter file name..."
-              className="w-full text-black border-2 p-2 rounded mb-4"
+              className="w-full text-gray-900 border-2 p-2 rounded mb-4"
             />
 
             <div className="flex justify-end space-x-2">
-              <button onClick={closeModal} className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600">
+              <button onClick={closeModal} className="px-4 py-2 bg-gray-500 cursor-pointer text-white rounded hover:bg-gray-600">
                 Cancel
               </button>
-              <button onClick={handleCreateFile} className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">
+              <button onClick={handleCreateFile} className="px-4 py-2 bg-black cursor-pointer text-white rounded ">
                 Create
               </button>
             </div>

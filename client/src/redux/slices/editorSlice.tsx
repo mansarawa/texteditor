@@ -82,6 +82,7 @@ const editorSlice = createSlice({
         if (activeFileIndex !== -1) {
           state.activeFile[activeFileIndex].content = content;
         }
+        state.activeFile = state.activeFile.filter((active) => active.name !== fileName);
       }
     
       localStorage.setItem("folders", JSON.stringify(state.folders));
