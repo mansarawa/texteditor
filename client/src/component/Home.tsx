@@ -14,7 +14,7 @@ function Home() {
         <div className="w-full h-screen flex flex-col bg-gray-900 text-white">
             <h1 className='text-2xl sm:text-4xl text-center py-4 text-yellow-300'>Welcome To Text Editor</h1>
 
-            <div className="flex flex-col sm:flex-row flex-grow bg-gray-900 text-white">
+            <div className="flex flex-col-reverse sm:flex-row flex-grow bg-gray-900 text-white">
                 <div className="w-full sm:w-1/4 bg-yellow-400 p-3">
                     <Sidebar />
                 </div>
