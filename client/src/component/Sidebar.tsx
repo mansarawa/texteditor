@@ -58,7 +58,7 @@ import { useState } from "react";
   
 
     return (
-      <div className="w-100 text-start bg-gray-900 text-white p-4 h-screen">
+      <div className="w-100 text-start bg-gray-900  text-white p-4 h-screen">
            <button onClick={openModal} className="bg-blue-500 px-4 mr-2 py-2 mb-2">Add Folder</button>
 
 
