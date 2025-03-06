@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import Sidebar from './Sidebar';
 import Editor from './Editor';
 import { useSelector } from 'react-redux';
@@ -6,7 +6,7 @@ import { RootState } from '../redux/store';
 
 function Home() {
     const folders = useSelector((state: RootState) => state.editor.folders);
-    const [isEditorOpen, setIsEditorOpen] = useState(false);
+    //const [isEditorOpen, setIsEditorOpen] = useState(false);
 
     console.log(folders);
 

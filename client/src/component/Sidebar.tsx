@@ -7,7 +7,7 @@ import { useState } from "react";
   const Sidebar = () => {
   const dispatch = useDispatch();
   const folders = useSelector((state: RootState) => state.editor.folders);
-  const activeFile = useSelector((state: RootState) => state.editor.activeFile);
+  // const activeFile = useSelector((state: RootState) => state.editor.activeFile);
 
   const [folderName, setFolderName] = useState("");
   const [fileName, setFileName] = useState("");

@@ -1,5 +1,4 @@
-import React from 'react'
-import photo from '../assets/video-text-removebg-preview.png'
+
 function Welcome() {
   
   return (
